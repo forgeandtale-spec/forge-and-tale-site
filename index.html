@@ -128,4 +128,261 @@
         <div class="section-heading narrow">
           <span class="section-tag">开始分析</span>
           <h2>开始你的求职分析</h2>
-          <p>填写下面的信息，我们会基于你的目标岗位d�8
+          <p>填写下面的信息，我们会基于你的目标岗位和简历内容，给你一份初步分析结果。</p>
+        </div>
+
+        <div class="analysis-layout">
+          <form class="analysis-form-card" id="job-analysis-form" novalidate>
+            <div class="form-grid">
+              <label class="form-field">
+                <span>你的专业</span>
+                <input
+                  type="text"
+                  name="major"
+                  placeholder="例如 市场营销 / 计算机 / 机械设计"
+                  required
+                >
+              </label>
+
+              <label class="form-field">
+                <span>你的年级</span>
+                <select name="grade" required>
+                  <option value="">请选择</option>
+                  <option value="大一">大一</option>
+                  <option value="大二">大二</option>
+                  <option value="大三">大三</option>
+                  <option value="大四">大四</option>
+                  <option value="研一">研一</option>
+                  <option value="研二">研二</option>
+                  <option value="其他">其他</option>
+                </select>
+              </label>
+
+              <label class="form-field full-width">
+                <span>目标岗位</span>
+                <input
+                  type="text"
+                  name="targetRole"
+                  placeholder="例如 产品运营 / 新媒体运营 / Java开发 / 管培生"
+                  required
+                >
+              </label>
+
+              <label class="form-field full-width">
+                <span>现有简历内容</span>
+                <textarea
+                  name="resumeContent"
+                  rows="7"
+                  placeholder="把你的简历内容直接粘贴进来，我们会帮你初步分析"
+                  required
+                ></textarea>
+              </label>
+
+              <label class="form-field full-width">
+                <span>目前最困惑的问题（可选）</span>
+                <textarea
+                  name="mainConcern"
+                  rows="4"
+                  placeholder="例如 不知道简历怎么改 / 不知道自己适合什么岗位 / 不知道面试怎么准备"
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+
+            <button class="primary-button form-submit" type="submit">开始分析</button>
+          </form>
+
+          <aside class="analysis-side-card">
+            <p class="analysis-side-tag">分析会关注什么</p>
+            <ul class="analysis-side-list">
+              <li>简历描述是否具体、有结果感</li>
+              <li>目标岗位和经历之间是否匹配</li>
+              <li>当前阶段最适合优先补强什么</li>
+              <li>面试中最容易被追问的部分</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block result-section is-hidden" id="results">
+      <div class="container">
+        <div class="section-heading narrow">
+          <span class="section-tag">分析结果</span>
+          <h2>你的分析结果</h2>
+          <p id="result-summary">
+            以下是根据你提交的信息生成的初步建议，适合作为下一步优化的起点。
+          </p>
+        </div>
+
+        <div class="result-overview" id="result-overview">
+          <div class="overview-item">
+            <span>专业</span>
+            <strong id="overview-major">待填写</strong>
+          </div>
+          <div class="overview-item">
+            <span>年级</span>
+            <strong id="overview-grade">待填写</strong>
+          </div>
+          <div class="overview-item">
+            <span>目标岗位</span>
+            <strong id="overview-role">待填写</strong>
+          </div>
+        </div>
+
+        <div class="result-grid">
+          <article class="result-card">
+            <div class="result-card-header">
+              <span class="result-index">01</span>
+              <h3>简历问题</h3>
+            </div>
+            <ul id="resume-issues-list">
+              <li>经历描述过于笼统，缺少结果和数据支撑</li>
+              <li>技能部分不够清晰，岗位相关性偏弱</li>
+              <li>项目经历结构不完整，重点不突出</li>
+            </ul>
+          </article>
+
+          <article class="result-card">
+            <div class="result-card-header">
+              <span class="result-index">02</span>
+              <h3>岗位建议</h3>
+            </div>
+            <ul id="job-suggestions-list">
+              <li>你更适合从运营、销售支持、用户增长等岗位切入</li>
+              <li>当前目标岗位和你的现有经历匹配度一般，建议补强相关经历</li>
+              <li>建议优先搜索这些关键词：运营助理 / 用户运营 / 内容运营 / 实习生</li>
+            </ul>
+          </article>
+
+          <article class="result-card">
+            <div class="result-card-header">
+              <span class="result-index">03</span>
+              <h3>面试问题建议</h3>
+            </div>
+            <ul id="interview-tips-list">
+              <li>请介绍一下你自己</li>
+              <li>为什么想投这个岗位</li>
+              <li>你过去做过的最有结果的一件事是什么</li>
+              <li>如果面试官追问项目细节，你应该如何回答</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block conversion-section" id="conversion">
+      <div class="container">
+        <div class="section-heading narrow">
+          <span class="section-tag">进一步获取帮助</span>
+          <h2>想拿到更详细的求职建议？</h2>
+          <p>
+            如果你希望获得更具体的简历修改、岗位方向分析和面试建议，可以选择以下方式进一步获取帮助。
+          </p>
+        </div>
+
+        <div class="conversion-grid">
+          <article class="conversion-card primary-conversion">
+            <div class="conversion-head">
+              <span class="conversion-label">入口 A</span>
+              <h3>留下联系方式，获取进一步帮助</h3>
+            </div>
+            <p>适合想系统梳理问题、希望获得后续跟进建议的同学。</p>
+            <button class="primary-button wide-button" id="open-contact-modal" type="button">
+              留下联系方式，获取进一步帮助
+            </button>
+          </article>
+
+          <article class="conversion-card secondary-conversion">
+            <div class="conversion-head">
+              <span class="conversion-label">入口 B</span>
+              <h3>直接加微信咨询</h3>
+            </div>
+            <p>适合想马上沟通、直接获取建议的同学。</p>
+            <button class="secondary-button wide-button" id="toggle-wechat-panel" type="button">
+              直接加微信咨询
+            </button>
+
+            <div class="wechat-panel is-collapsed" id="wechat-panel">
+              <div class="wechat-qr-shell">
+                <img src="./assets/wechat-qr-placeholder.svg" alt="微信咨询二维码">
+              </div>
+              <div class="wechat-copy">
+                <strong>微信号：zfr528071</strong>
+                <p>微信二维码待替换。当前可先通过微信号 zfr528071 联系，我们会尽快了解你的需求。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>大学生求职助手</h2>
+        <p>面向大学生的求职辅助工具</p>
+      </div>
+      <div>
+        <h3>联系方式</h3>
+        <p>微信 / 邮箱 / 其他方式</p>
+      </div>
+      <div>
+        <h3>免责声明</h3>
+        <p>本工具仅提供辅助建议，不保证录用结果，请结合个人实际情况进行判断。</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop is-hidden" id="contact-modal" aria-hidden="true" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <button class="modal-close" id="close-contact-modal" type="button" aria-label="关闭弹窗">
+        ×
+      </button>
+
+      <div class="modal-heading">
+        <span class="section-tag">获取进一步帮助</span>
+        <h2 id="contact-modal-title">获取进一步帮助</h2>
+        <p>
+          填写下面的信息，我们会根据你的情况进一步联系你，帮助你梳理简历、岗位方向和面试准备重点。
+        </p>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <label class="form-field">
+          <span>昵称</span>
+          <input type="text" name="nickname" placeholder="请输入你的昵称" required>
+        </label>
+
+        <label class="form-field">
+          <span>微信号或联系方式</span>
+          <input type="text" name="contact" placeholder="请输入微信号或其他联系方式" required>
+        </label>
+
+        <label class="form-field">
+          <span>目标岗位</span>
+          <input type="text" name="contactRole" placeholder="请输入你的目标岗位" required>
+        </label>
+
+        <label class="form-field">
+          <span>当前最想解决的问题</span>
+          <textarea
+            name="contactIssue"
+            rows="4"
+            placeholder="例如 简历没亮点 / 岗位方向不明确 / 面试准备没有头绪"
+            required
+          ></textarea>
+        </label>
+
+        <div class="form-feedback" id="contact-feedback" aria-live="polite"></div>
+
+        <button class="primary-button wide-button" type="submit">提交信息</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
