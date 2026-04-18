@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Shop 店铺健康止血包 Intake 清单</title>
+  <meta
+    name="description"
+    content="TikTok Shop 店铺健康止血包 Intake 清单：客户填写资料与准备材料的正式页面。"
+  >
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="./index.html">
+        <span class="brand-kicker">客户准备清单</span>
+        <span class="brand-name">TikTok Shop 店铺健康止血包 Intake</span>
+      </a>
+
+      <nav class="top-nav" aria-label="主导航">
+        <a href="./index.html">返回首页</a>
+        <a href="./proposal.html">查看报价单</a>
+        <a href="#materials">材料确认</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="container doc-hero-grid">
+        <div class="doc-copy">
+          <span class="section-tag">Intake 清单</span>
+          <h1>先把材料交齐，才能做有效诊断</h1>
+          <p class="doc-subtitle">用于客户填写资料，或由你按字段手动收集。</p>
+          <p class="doc-description">请按页面字段准备并提交基础材料。材料齐全后，48 小时内输出首版风险总览。</p>
+          <p class="doc-description">最终提交由客户自行在 Seller Center 完成。客户需对所提供材料的真实性、完整性与时效性负责。</p>
+
+          <div class="hero-actions">
+            <a class="primary-button" href="./proposal.html">先看报价单</a>
+            <a class="secondary-button" href="./intake-form.md">查看 Markdown 版字段</a>
+          </div>
+        </div>
+
+        <aside class="doc-summary-card">
+          <div class="summary-group">
+            <span class="pricing-label">提交前确认</span>
+            <strong>没有这些基础材料，就无法做有效诊断</strong>
+            <p>没有后台截图、订单样本、处罚通知的，不报价。</p>
+          </div>
+
+          <div class="summary-inline-list">
+            <div>
+              <span>首版总览</span>
+              <strong>48 小时内</strong>
+            </div>
+            <div>
+              <span>完整交付</span>
+              <strong>7 天内</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <form class="intake-form-layout">
+          <section class="form-card">
+            <div class="form-card-head">
+              <span class="module-index">01</span>
+              <h2>基础信息</h2>
+            </div>
+            <div class="form-grid">
+              <label class="field">
+                <span>联系人姓名</span>
+                <input type="text" name="contact_name">
+              </label>
+              <label class="field">
+                <span>联系方式</span>
+                <input type="text" name="contact_method">
+              </label>
+              <label class="field">
+                <span>公司 / 团队名称</span>
+                <input type="text" name="company_name">
+              </label>
+              <label class="field">
+                <span>店铺名称</span>
+                <input type="text" name="shop_name">
+              </label>
+              <label class="field field-full">
+                <span>店铺链接</span>
+                <input type="url" name="shop_link">
+              </label>
+              <label class="field">
+                <span>当前主营类目</span>
+                <input type="text" name="main_category">
+              </label>
+              <label class="field">
+                <span>当前主营 SKU</span>
+                <input type="text" name="main_sku">
+              </label>
+              <label class="field">
+                <span>近 30 天大致订单量</span>
+                <input type="text" name="order_volume">
+              </label>
+              <label class="field field-full">
+                <span>当前主要问题概述</span>
+                <textarea name="issue_summary" rows="4"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-card">
+            <div class="form-card-head">
+              <span class="module-index">02</span>
+              <h2>店铺健康</h2>
+            </div>
+            <div class="form-grid">
+              <label class="field">
+                <span>AHR 当前分数</span>
+                <input type="text" name="ahr_score">
+              </label>
+              <label class="field">
+                <span>AHR 页面截图</span>
+                <input type="text" name="ahr_screenshot" placeholder="可填写文件名或链接">
+              </label>
+              <label class="field">
+                <span>是否已进入风险区 / 高危区</span>
+                <input type="text" name="ahr_status">
+              </label>
+              <label class="field field-full">
+                <span>最近 30 天店铺健康变化说明</span>
+                <textarea name="health_change" rows="4"></textarea>
+              </label>
+              <label class="field field-full">
+                <span>当前最担心的店铺健康问题</span>
+                <textarea name="health_concern" rows="3"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-card">
+            <div class="form-card-head">
+              <span class="module-index">03</span>
+              <h2>违规</h2>
+            </div>
+            <div class="form-grid">
+              <label class="field">
+                <span>最近 30 天是否收到违规通知</span>
+                <input type="text" name="violation_notice">
+              </label>
+              <label class="field">
+                <span>违规类型</span>
+                <input type="text" name="violation_type">
+              </label>
+              <label class="field">
+                <span>处罚通知截图</span>
+                <input type="text" name="violation_screenshot" placeholder="可填写文件名或链接">
+              </label>
+              <label class="field">
+                <span>当前所处阶段</span>
+                <input type="text" name="appeal_stage" placeholder="如 Correction / First Appeal / Second Appeal">
+              </label>
+              <label class="field">
+                <span>当前截止时间</span>
+                <input type="text" name="deadline">
+              </label>
+              <label class="field field-full">
+                <span>已准备材料说明</span>
+                <textarea name="prepared_materials" rows="3"></textarea>
+              </label>
+              <label class="field field-full">
+                <span>还缺哪些材料</span>
+                <textarea name="missing_materials" rows="3"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-card">
+            <div class="form-card-head">
+              <span class="module-index">04</span>
+              <h2>退款退货</h2>
+            </div>
+            <div class="form-grid">
+              <label class="field">
+                <span>最近 30 天退款退货记录</span>
+                <input type="text" name="refund_records" placeholder="可填写文件名或链接">
+              </label>
+              <label class="field">
+                <span>refund-only 是否明显增加</span>
+                <input type="text" name="refund_only_change">
+              </label>
+              <label class="field">
+                <span>退货请求是否明显增加</span>
+                <input type="text" name="return_request_change">
+              </label>
+              <label class="field">
+                <span>是否出现超时未处理情况</span>
+                <input type="text" name="refund_delay">
+              </label>
+              <label class="field field-full">
+                <span>当前最常见售后原因</span>
+                <textarea name="refund_reasons" rows="3"></textarea>
+              </label>
+              <label class="field field-full">
+                <span>当前客服 / 售后规则说明</span>
+                <textarea name="service_rules" rows="4"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-card">
+            <div class="form-card-head">
+              <span class="module-index">05</span>
+              <h2>履约</h2>
+            </div>
+            <div class="form-grid">
+              <label class="field">
+                <span>fulfillment performance 截图</span>
+                <input type="text" name="fulfillment_screenshot" placeholder="可填写文件名或链接">
+              </label>
+              <label class="field">
+                <span>VTR</span>
+                <input type="text" name="vtr">
+              </label>
+              <label class="field">
+                <span>LDR</span>
+                <input type="text" name="ldr">
+              </label>
+              <label class="field">
+                <span>OTDR</span>
+                <input type="text" name="otdr">
+              </label>
+              <label class="field">
+                <span>SFCR</span>
+                <input type="text" name="sfcr">
+              </label>
+              <label class="field">
+                <span>最近 30 天是否出现履约异常</span>
+                <input type="text" name="fulfillment_issue">
+              </label>
+              <label class="field field-full">
+                <span>履约相关截图或导出</span>
+                <input type="text" name="fulfillment_export" placeholder="可填写文件名或链接">
+              </label>
+              <label class="field field-full">
+                <span>当前履约流程简述</span>
+                <textarea name="fulfillment_process" rows="4"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-card">
+            <div class="form-card-head">
+              <span class="module-index">06</span>
+              <h2>结算与 reserve</h2>
+            </div>
+            <div class="form-grid">
+              <label class="field">
+                <span>最近 30 天 settlement 截图</span>
+                <input type="text" name="settlement_screenshot" placeholder="可填写文件名或链接">
+              </label>
+              <label class="field">
+                <span>最近 30 天 reserve 截图</span>
+                <input type="text" name="reserve_screenshot" placeholder="可填写文件名或链接">
+              </label>
+              <label class="field">
+                <span>是否感觉结算节奏变慢</span>
+                <input type="text" name="settlement_slow">
+              </label>
+              <label class="field">
+                <span>是否感觉 reserve 压力增加</span>
+                <input type="text" name="reserve_pressure">
+              </label>
+              <label class="field field-full">
+                <span>当前最担心的资金相关问题</span>
+                <textarea name="fund_risk" rows="3"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-card">
+            <div class="form-card-head">
+              <span class="module-index">07</span>
+              <h2>补充说明</h2>
+            </div>
+            <div class="form-grid">
+              <label class="field field-full">
+                <span>还有哪些异常情况需要补充</span>
+                <textarea name="extra_issues" rows="4"></textarea>
+              </label>
+              <label class="field field-full">
+                <span>是否已有内部处理动作</span>
+                <textarea name="internal_actions" rows="3"></textarea>
+              </label>
+              <label class="field">
+                <span>是否希望先做 7 天止血试点包</span>
+                <input type="text" name="pilot_interest">
+              </label>
+              <label class="field">
+                <span>是否接受材料齐全后 48 小时内输出首版风险总览</span>
+                <input type="text" name="timeline_acceptance">
+              </label>
+              <label class="field field-full">
+                <span>备注</span>
+                <textarea name="notes" rows="3"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-card" id="materials">
+            <div class="form-card-head">
+              <span class="module-index">确认</span>
+              <h2>材料确认</h2>
+            </div>
+            <div class="checklist-stack">
+              <label class="check-item">
+                <input type="checkbox" name="confirm_materials">
+                <span>我确认已提供当前可提供的基础材料</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="confirm_truth">
+                <span>我确认所提交截图、导出、处罚通知、订单样本及其他材料真实、完整、有效</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="confirm_diagnosis">
+                <span>我理解没有基础材料将无法做有效诊断</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" name="confirm_submit">
+                <span>我理解最终提交由我方自行在 Seller Center 完成</span>
+              </label>
+            </div>
+          </section>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <p class="footer-title">TikTok Shop 店铺健康止血包</p>
+        <p>客户可直接按本页字段准备资料，也可由你据此手动收集。</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./index.html">返回首页</a>
+        <a href="./proposal.html">报价单</a>
+        <a href="./intake-form.md">Markdown 版本</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
